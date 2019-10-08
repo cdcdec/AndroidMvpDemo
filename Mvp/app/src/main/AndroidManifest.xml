@@ -11,11 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.cdc.ui.MainActivity"></activity>
         <activity
             android:name="com.cdc.tasks.TasksActivity"
             android:theme="@style/AppTheme.OverlapSystemBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,6 +27,7 @@
             android:name="com.cdc.statistics.StatisticsActivity"
             android:parentActivityName="com.cdc.tasks.TasksActivity"
             tools:ignore="UnusedAttribute">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
